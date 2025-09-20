@@ -9,7 +9,7 @@ export default function Home() {
         <img
           src="/logo.png" // put logo.png in /public
           alt="MapMyDeals Logo"
-          className="mx-auto w-60 h-60"
+          className="mx-auto w-40 h-40"
         />
 
         {/* Title + Tagline */}
