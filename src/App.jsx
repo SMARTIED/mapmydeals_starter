@@ -3,12 +3,12 @@ import Home from "./pages/Home";
 import Deals from "./pages/Deals";
 import MapView from "./pages/MapView";
 import Settings from "./pages/Settings";
-import logo from '../assets/logo.png';
+import Header from "./components/Header";
 
 function App() {
   return (
     <div className="min-h-screen flex flex-col">
-      <Header /> {/* 👈 Your Header component is correct */}
+      <Header />
 
       <div className="flex-1 p-4">
         <Routes>
@@ -18,7 +18,7 @@ function App() {
           <Route path="/settings" element={<Settings />} />
         </Routes>
       </div>
-       <img src={logo} alt="MapMyDeals Logo" className="h-10 mr-4" />
+
       <footer className="bg-gray-200 text-center p-2 text-sm">
         © {new Date().getFullYear()} MapMyDeals — Navigate to Savings
       </footer>
