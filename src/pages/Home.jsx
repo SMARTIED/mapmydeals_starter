@@ -5,27 +5,17 @@ export default function Home() {
     <div className="flex flex-col items-center text-center">
       {/* Hero Section */}
       <div className="mt-10 space-y-6">
-        {/* Logo */}
-        <img
-          src="/logo.png" // put logo.png in /public
-          alt="MapMyDeals Logo"
-          className="mx-auto w-40 h-40"
-        />
-
         {/* Title + Tagline */}
         <h1 className="text-4xl font-bold text-primary">MapMyDeals</h1>
-
         <p className="text-lg text-gray-600">Navigate to Savings — Your deals, mapped</p>
 
-{/* CTA Button */}
-
+        {/* CTA Button */}
         <a
           href="#deals" // scrolls down to deals list
           className="px-6 py-3 bg-primary text-white rounded-full shadow hover:bg-orange-600 transition"
         >
           Find Deals Near Me
         </a>
-       
       </div>
 
       {/* Benefits Section */}
@@ -71,11 +61,6 @@ export default function Home() {
           ))}
         </ul>
       </div>
-
-      {/* Footer */}
-      <footer className="mt-16 text-gray-500 text-sm">
-        © {new Date().getFullYear()} MapMyDeals | Built by KaapseKode
-      </footer>
     </div>
   );
 }
