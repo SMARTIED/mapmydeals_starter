@@ -1,23 +1,14 @@
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Deals from "./pages/Deals";
 import MapView from "./pages/MapView";
 import Settings from "./pages/Settings";
-import Header from "./components/Header"; //
+import Header from "./components/Header"; // 👈 Your import is correct
 
 function App() {
   return (
     <div className="min-h-screen flex flex-col">
-<Header /> 
-      <nav className="bg-primary text-white p-4 flex justify-between">
-        <h1 className="font-bold text-xl">MapMyDeals</h1>
-        <div className="space-x-4">
-          <Link to="/">Home</Link>
-          <Link to="/deals">Deals</Link>
-          <Link to="/map">Map</Link>
-          <Link to="/settings">Settings</Link>
-        </div>
-      </nav>
+      <Header /> {/* 👈 Your Header component is correct */}
 
       <div className="flex-1 p-4">
         <Routes>
