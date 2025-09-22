@@ -3,12 +3,12 @@ import Home from "./pages/Home";
 import Deals from "./pages/Deals";
 import MapView from "./pages/MapView";
 import Settings from "./pages/Settings";
-import Header from "./components/Header";
+import Header from "./components/Header"; // 👈 Your import is correct
 
 function App() {
   return (
     <div className="min-h-screen flex flex-col">
-      <Header />
+      <Header /> {/* 👈 Your Header component is correct */}
 
       <div className="flex-1 p-4">
         <Routes>
