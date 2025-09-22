@@ -3,10 +3,12 @@ import Home from "./pages/Home";
 import Deals from "./pages/Deals";
 import MapView from "./pages/MapView";
 import Settings from "./pages/Settings";
+import Header from "./components/Header"; //
 
 function App() {
   return (
     <div className="min-h-screen flex flex-col">
+<Header /> 
       <nav className="bg-primary text-white p-4 flex justify-between">
         <h1 className="font-bold text-xl">MapMyDeals</h1>
         <div className="space-x-4">
