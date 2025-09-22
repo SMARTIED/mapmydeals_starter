@@ -18,7 +18,7 @@ function App() {
           <Route path="/settings" element={<Settings />} />
         </Routes>
       </div>
-
+       <img src={logo} alt="MapMyDeals Logo" className="h-10 mr-4" />
       <footer className="bg-gray-200 text-center p-2 text-sm">
         © {new Date().getFullYear()} MapMyDeals — Navigate to Savings
       </footer>
