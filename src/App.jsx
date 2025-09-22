@@ -3,7 +3,7 @@ import Home from "./pages/Home";
 import Deals from "./pages/Deals";
 import MapView from "./pages/MapView";
 import Settings from "./pages/Settings";
-import Header from "./components/Header"; // 👈 Your import is correct
+import logo from '../assets/logo.png';
 
 function App() {
   return (
