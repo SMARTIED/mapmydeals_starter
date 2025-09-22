@@ -1,1 +1,0 @@
-"# mapmydeals_starter" 
