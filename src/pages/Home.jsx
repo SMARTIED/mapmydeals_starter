@@ -6,7 +6,11 @@ export default function Home() {
       {/* Hero Section */}
       <div className="mt-10 space-y-6">
         {/* Logo */}
-        
+        <img
+          src="/logo.png" // put logo.png in /public
+          alt="MapMyDeals Logo"
+          className="mx-auto w-40 h-40"
+        />
 
         {/* Title + Tagline */}
         <h1 className="text-4xl font-bold text-primary">MapMyDeals</h1>
