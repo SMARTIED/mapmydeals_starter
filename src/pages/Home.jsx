@@ -5,14 +5,25 @@ export default function Home() {
     <div className="flex flex-col items-center text-center">
       {/* Hero Section */}
       <div className="mt-10 space-y-6">
+        {/* Logo */}
+        <img
+          src="/logo.png" // 👈 make sure logo.png is inside /public
+          alt="MapMyDeals Logo"
+          className="mx-auto w-32 h-32"
+        />
+
         {/* Title + Tagline */}
-        <h1 className="text-4xl font-bold text-primary">MapMyDeals</h1>
-        <p className="text-lg text-gray-600">Navigate to Savings — Your deals, mapped</p>
+        <h1 className="text-5xl font-extrabold text-orange-600">
+          MapMyDeals
+        </h1>
+        <p className="text-lg text-gray-600">
+          Navigate to Savings — Your deals, mapped
+        </p>
 
         {/* CTA Button */}
         <a
           href="#deals" // scrolls down to deals list
-          className="px-6 py-3 bg-primary text-white rounded-full shadow hover:bg-orange-600 transition"
+          className="mt-4 px-6 py-3 bg-orange-500 text-white rounded-full shadow-lg hover:bg-orange-600 transition"
         >
           Find Deals Near Me
         </a>
@@ -54,7 +65,7 @@ export default function Home() {
                 <p className="text-sm text-gray-600">{deal.store}</p>
               </div>
               <div className="text-right">
-                <p className="text-primary font-bold">R {deal.price}</p>
+                <p className="text-orange-600 font-bold">R {deal.price}</p>
                 <p className="text-gray-500">{deal.distance} m</p>
               </div>
             </li>
