@@ -9,7 +9,7 @@ export default function Home() {
         <img
           src={`${import.meta.env.BASE_URL}logo.png`} // ✅ ensures works on GitHub Pages
           alt="MapMyDeals Logo"
-          className="mx-auto w-32 h-32"
+          className="mx-auto w-52 h-52"
         />
 
         {/* Title + Tagline */}
