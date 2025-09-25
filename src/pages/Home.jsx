@@ -7,22 +7,20 @@ export default function Home() {
       <div className="mt-10 space-y-6">
         {/* Logo */}
         <img
-          src="/logo.png" // 👈 make sure logo.png is inside /public
+          src={`${import.meta.env.BASE_URL}logo.png`} // ✅ ensures works on GitHub Pages
           alt="MapMyDeals Logo"
           className="mx-auto w-32 h-32"
         />
 
         {/* Title + Tagline */}
-        <h1 className="text-5xl font-extrabold text-orange-600">
-          MapMyDeals
-        </h1>
+        <h1 className="text-5xl font-extrabold text-orange-600">MapMyDeals</h1>
         <p className="text-lg text-gray-600">
           Navigate to Savings — Your deals, mapped
         </p>
 
         {/* CTA Button */}
         <a
-          href="#deals" // scrolls down to deals list
+          href="#deals"
           className="mt-4 px-6 py-3 bg-orange-500 text-white rounded-full shadow-lg hover:bg-orange-600 transition"
         >
           Find Deals Near Me
